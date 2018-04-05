@@ -1,0 +1,23 @@
+2018-04-05 03:27:42 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: servlet-unit
+	...]
+2018-04-05 03:27:42 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-04-05 03:27:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-04-05 03:27:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-05 03:27:43 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-04-05 03:27:44 INFO  SchemaCreatorImpl:489 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2b94c36b'
+2018-04-05 03:27:45 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-05 03:27:45 INFO  SchemaDropperImpl$DelayedDropActionImpl:524 - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-04-05 03:27:45 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: servlet-unit
+	...]
+2018-04-05 03:27:45 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-04-05 03:27:45 INFO  SchemaCreatorImpl:489 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2b94c36b'
+2018-04-05 03:27:46 INFO  SchemaDropperImpl$DelayedDropActionImpl:524 - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-04-05 03:27:46 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: servlet-unit
+	...]
+2018-04-05 03:27:46 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-04-05 03:27:46 INFO  SchemaCreatorImpl:489 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2b94c36b'
+2018-04-05 03:27:46 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-05 03:27:46 INFO  SchemaDropperImpl$DelayedDropActionImpl:524 - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'

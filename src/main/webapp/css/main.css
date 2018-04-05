@@ -1,0 +1,33 @@
+#app {
+    width:100%;
+    text-align:center;
+}
+
+#left {
+    float:left;
+    width:100px;
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+    width:100px;
+}
+
+#right {
+    float:right;
+    width:100px;
+}
+
+#doublepage {
+    align-content: center;
+}
+
+body {
+    background: #303030;
+    color: #ffffff;
+}
+
+.text {
+    color: #99a6b1;
+}
