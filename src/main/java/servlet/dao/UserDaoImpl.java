@@ -7,6 +7,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+/**
+ * @see Dao
+ *
+ * @author kirillparolys
+ * @version 1.1
+ */
 @Component(value = "userDaoDean")
 public class UserDaoImpl implements Dao<User> {
 

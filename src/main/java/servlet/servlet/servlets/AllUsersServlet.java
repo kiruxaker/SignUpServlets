@@ -10,6 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * @author kirillparolys
+ * @version 1.1
+ *
+ * @see InitServlet
+ */
 @WebServlet({"/all-users"})
 public class AllUsersServlet extends InitServlet {
 

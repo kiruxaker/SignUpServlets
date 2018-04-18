@@ -5,6 +5,12 @@ import servlet.validator.Validator;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * Validator test case
+ *
+ * @author kirillparolys
+ * @version 1.1
+ */
 public class ValidationTest {
 
     private Validator validator = new Validator();

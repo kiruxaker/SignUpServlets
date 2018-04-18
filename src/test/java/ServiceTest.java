@@ -13,6 +13,12 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
+/**
+ * UserService test case
+ *
+ * @author kirillparolys
+ * @version 1.1
+ */
 public class ServiceTest {
 
     private UserService service;

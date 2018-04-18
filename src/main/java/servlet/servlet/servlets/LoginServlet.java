@@ -11,6 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * This is servlet class for login page
+ *
+ * @author kirillparolys
+ * @version 1.1
+ */
 @WebServlet(urlPatterns = {"/login"})
 public class LoginServlet extends InitServlet {
 

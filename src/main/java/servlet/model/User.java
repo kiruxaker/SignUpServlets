@@ -5,6 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+/**
+ * Entity of the user which will be stored in the database
+ *
+ * @author kirillparolys
+ * @version 1.1
+ */
 @Entity
 public class User {
 

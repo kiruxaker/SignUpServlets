@@ -10,6 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * This is servlet class for register.jsp
+ *
+ * @author kirillparolys
+ * @version 1.1
+ */
 @WebServlet(urlPatterns = {"/register"})
 public class RegisterServlet extends InitServlet {
 

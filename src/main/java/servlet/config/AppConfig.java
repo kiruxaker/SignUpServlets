@@ -12,6 +12,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+/**
+ * @author kirillparolys
+ * @version 1.1
+ * @since 2018-03-28
+ */
+
 @Configuration
 @PropertySource("/app.properties")
 @ComponentScan(basePackages = "servlet")
@@ -19,9 +25,20 @@ import java.util.Properties;
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class AppConfig {
 
+    /**
+     * @see Autowired
+     */
     @Autowired
     private Environment environment;
 
+    /**
+     * @return instance of JpaTransactionManager
+     *
+     * @see JpaTransactionManager
+     * @see javax.persistence.EntityManagerFactory
+     *
+     * @see Bean
+     */
     @Bean
     public JpaTransactionManager transactionManager(){
         JpaTransactionManager transactionManager = new JpaTransactionManager();
@@ -29,6 +46,14 @@ public class AppConfig {
         return transactionManager;
     }
 
+    /**
+     * @return  instance LocalContainerEntityManagerFactoryBean
+     *
+     * @see LocalContainerEntityManagerFactoryBean
+     * @see HibernateJpaVendorAdapter
+     *
+     * @see Bean
+     */
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(){
         LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
@@ -40,6 +65,11 @@ public class AppConfig {
         return bean;
     }
 
+    /**
+     * @return instance of Properties with set of properties from app.properties
+     *
+     * @see Environment
+     */
     @Bean
     public Properties jpaProperties() {
         Properties properties = new Properties();
@@ -49,6 +79,11 @@ public class AppConfig {
         return properties;
     }
 
+    /**
+     * @return instance of DataSource with set class name from app.properties
+     *
+     * @see DriverManagerDataSource
+     */
     @Bean
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();

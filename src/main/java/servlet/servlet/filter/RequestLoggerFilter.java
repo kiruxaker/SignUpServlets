@@ -7,11 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
+/**
+ * Logger class
+ *
+ * @author kirillparolys
+ * @version 1.1
+ */
 public class RequestLoggerFilter implements Filter{
 
     private static final Logger LOGGER = Logger.getLogger(RequestLoggerFilter.class);
 
+//    initializes LOGGER
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         LOGGER.info("Creating RequestLoggerFilter");
@@ -31,6 +37,7 @@ public class RequestLoggerFilter implements Filter{
         chain.doFilter(request, response);
     }
 
+//    destroys LOGGER
     @Override
     public void destroy() {
         LOGGER.info("Destroying filter");

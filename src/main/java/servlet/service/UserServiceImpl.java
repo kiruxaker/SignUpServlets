@@ -10,6 +10,10 @@ import servlet.validator.Validator;
 
 import java.util.List;
 
+/**
+ * @author kirillparolys
+ * @version 1.1
+ */
 @Service(value = "service")
 public class UserServiceImpl implements UserService {
 
@@ -19,6 +23,18 @@ public class UserServiceImpl implements UserService {
     private Validator validator;
 
 
+    /**
+     * Logs into the system, previously checking his email and pass by validator
+     *
+     * @param email email of the user
+     * @param pass pass of the user
+     *
+     * @see Validator
+     * @see servlet.dao.UserDaoImpl
+     *
+     * @return saved instance of user
+     * @throws AppException
+     */
     @Override
     @Transactional
     public User login(String email, String pass) throws AppException {
@@ -32,6 +48,17 @@ public class UserServiceImpl implements UserService {
         throw new AppException("wrong email or pass");
     }
 
+    /**
+     * Adds user to the database
+     *
+     * @param user user which will be saved
+     * @return saved user
+     *
+     * @see User
+     * @see servlet.dao.UserDaoImpl
+     *
+     * @throws AppException
+     */
     @Override
     @Transactional
     public User addUser(User user) throws AppException {
@@ -39,6 +66,9 @@ public class UserServiceImpl implements UserService {
         return userDao.save(user);
     }
 
+    /**
+     * @return all users in database
+     */
     @Override
     @Transactional
     public List<User> allUsers() {
